@@ -1,0 +1,18 @@
+number = 1
+guess = -1
+print("心情预测器")
+while guess != number:
+	try:
+		# 获取用户输入并转化为integer
+		guess = int(input("请输入今天星期几："))
+
+		if guess == number:
+			 print("周一周一，跳楼一起")
+		elif number < guess <= 5:
+			print("社畜社畜，工作专注")
+		elif number+4 < guess <=7 :
+			print("周末你还玩什么python啊?")
+		else:
+			print("世上没有星期八，换个日子试试看")
+	except ValueError:
+			print("人工智障无法回答")
